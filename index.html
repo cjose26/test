@@ -14,10 +14,47 @@
 <body>
     <header>
         <!-- time & date  -->
+        <div class="jumbotron jumbotron-fluid bg-dark text-light">
+            <div class="container text-center">
+              <h1>
+                Project Tracker
+              </h1>
+              <h3 id="time"></h3>
+            </div>
+          </div>    
     </header>
-    <div class="card">
-        <!-- instructions to use app and button to open bootstrap dialog -->
-    </div>
+          <!-- Button trigger for modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="modal-btn">
+            Click to see if it works
+        </button>
+        
+        <!-- Modal -->
+        <!-- does not work for some reason -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <h3 id="instructions">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                optio, eaque rerum! Provident similique accusantium nemo autem.
+                </h3>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        
     <form action="">
         <!-- name of project
         type of project (input type dropdown)
@@ -29,6 +66,8 @@
     </table>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
     <script src="script.js"></script>
 </body>
 </html>
